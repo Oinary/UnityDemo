@@ -4,22 +4,20 @@ namespace DemoProject_Science
 {
     class Program
     {
-        static int MyID;
-        static string MyName;
-        static float MyShoesSize;
+        static int MyID = 10;
 
         static void Main(string[] args)
         {
-            MyID = 114514;
-            MyName = "高輪ゲートウェイ";
-            MyShoesSize = 26.5f;
+            Console.WriteLine("一回目" + MyID);
 
-            Console.WriteLine("IDは" + MyID);
-            Console.WriteLine("名前は" + MyName);
-            Console.WriteLine("靴のサイズは" + MyShoesSize + "cm");
+            MyID = MyID + 10;
+            Console.WriteLine("二回目" + MyID);
 
-            MyID = 24;
-            Console.WriteLine("本当のIDは" + MyID + "でした…");
+            MyID = 100 * 2;
+            Console.WriteLine("三回目" + MyID);
+
+            MyID -= 100;
+            Console.WriteLine("四回目" + MyID);
         }
     }
 }
